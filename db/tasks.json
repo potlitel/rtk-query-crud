@@ -1,0 +1,40 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "name": "Be as thorough as possible.",
+      "description": "It’s easier to delete than add, so add everything no matter how small to capture everything you have to do in one place. If you need to edit, you can trim down the list to only essentials.",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "name": "Assign each task with a number to identify it.",
+      "description": "This helps you when referencing the task, and facilitates communication when the task list is shared with a team. It also makes it easier to search for if you have an extensive task list.",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "name": "Divide your task list into different categories.",
+      "description": "You’ve already done this in terms of priority, but that’s only one category. You might want to organize it by project phase or by which department or team is responsible for executing that task. This allows you to keep track of your work and check on its status so nothing falls through the cracks.",
+      "completed": false
+    },
+    {
+      "id": 4,
+      "name": "Turn your task list into a graph, such as a timeline chart.",
+      "description": "This lays out all your work chronologically on a horizontal timeline and provides you with perspective. This view can help you better plan your schedule, as you’re seeing every task in relation to the larger deadline.",
+      "completed": false
+    },
+    {
+      "id": 5,
+      "name": "Don’t make your task list the day you’re starting to do that work.",
+      "description": "Some people like to start the day with a task list, but it takes time away from work, which dings your productivity, and could be just procrastinating. It’s better to end the day by looking towards the coming day (or week or month) and gathering up your work then. That way you can start the day running.",
+      "completed": true
+    },
+    {
+      "name": "Task new",
+      "description": "denom new",
+      "completed": false,
+      "id": 6
+    }
+  ]
+}
