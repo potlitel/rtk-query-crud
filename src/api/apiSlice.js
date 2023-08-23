@@ -1,5 +1,7 @@
+/* eslint-disable no-unused-vars */
 // eslint-disable-next-line no-unused-vars
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+import NProgress from "nprogress";
 
 export const apiSlice = createApi({
   reducerPath: "api",
@@ -11,6 +13,10 @@ export const apiSlice = createApi({
       query: () => "/tasks",
       providesTags: ["Tasks"],
       transformResponse: (response) => response.sort((a, b) => b.id - a.id),
+      onQueryStarted(arg, api) {
+        NProgress.start();
+      },
+      keepUnusedDataFor: 5,
     }),
     createTasks: builder.mutation({
       query: (newTask) => ({
@@ -19,6 +25,9 @@ export const apiSlice = createApi({
         body: newTask,
       }),
       invalidatesTags: ["Tasks"],
+      onQueryStarted(arg, api) {
+        NProgress.start();
+      },
     }),
     updateTasks: builder.mutation({
       query: (updatedTask) => ({
@@ -27,6 +36,9 @@ export const apiSlice = createApi({
         body: updatedTask,
       }),
       invalidatesTags: ["Tasks"],
+      onQueryStarted(arg, api) {
+        NProgress.start();
+      },
     }),
     deleteTasks: builder.mutation({
       query: (id) => ({
@@ -34,6 +46,9 @@ export const apiSlice = createApi({
         method: "DELETE",
       }),
       invalidatesTags: ["Tasks"],
+      onQueryStarted(arg, api) {
+        NProgress.start();
+      },
     }),
   }),
 });

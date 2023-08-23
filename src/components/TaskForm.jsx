@@ -1,8 +1,31 @@
+/* eslint-disable no-unused-vars */
 import { useCreateTasksMutation } from "../api/apiSlice";
+import { useEffect } from "react";
+import NProgress from "nprogress";
 
 const TaskForm = () => {
-  const [createTask] = useCreateTasksMutation();
+  const [createTask, { isLoading, isError, error, isSuccess }] =
+    useCreateTasksMutation();
 
+  useEffect(() => {
+    if (isSuccess) {
+      // setOpenNoteModal(false);
+      // toast.warning("Note deleted successfully");
+      NProgress.done();
+    }
+
+    if (isError) {
+      // setOpenNoteModal(false);
+      const err = error;
+      const resMessage =
+        err.data.message || err.data.detail || err.message || err.toString();
+      // toast.error(resMessage, {
+      //   position: "top-right",
+      // });
+      NProgress.done();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isLoading]);
   /**
    * Description
    * @param {any} e

@@ -6,8 +6,12 @@ import { TasksList } from "./components/TasksList";
 const App = () => {
   return (
     <>
-      <TaskForm />
-      <TasksList />
+      <div id="container">
+        <div id="header">
+          <TaskForm />
+          <TasksList />
+        </div>
+      </div>
     </>
   );
 };

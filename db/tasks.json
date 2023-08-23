@@ -16,25 +16,25 @@
       "id": 3,
       "name": "Divide your task list into different categories.",
       "description": "You’ve already done this in terms of priority, but that’s only one category. You might want to organize it by project phase or by which department or team is responsible for executing that task. This allows you to keep track of your work and check on its status so nothing falls through the cracks.",
-      "completed": false
+      "completed": true
     },
     {
       "id": 4,
       "name": "Turn your task list into a graph, such as a timeline chart.",
       "description": "This lays out all your work chronologically on a horizontal timeline and provides you with perspective. This view can help you better plan your schedule, as you’re seeing every task in relation to the larger deadline.",
-      "completed": false
+      "completed": true
     },
     {
       "id": 5,
       "name": "Don’t make your task list the day you’re starting to do that work.",
       "description": "Some people like to start the day with a task list, but it takes time away from work, which dings your productivity, and could be just procrastinating. It’s better to end the day by looking towards the coming day (or week or month) and gathering up your work then. That way you can start the day running.",
-      "completed": true
+      "completed": false
     },
     {
-      "name": "Task new",
-      "description": "denom new",
+      "name": "nueva tarea",
+      "description": "denom nueva tareas",
       "completed": false,
-      "id": 6
+      "id": 7
     }
   ]
 }

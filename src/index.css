@@ -1,6 +1,6 @@
 body {
-  background-color: rgb(53, 126, 221);
-  color: #fff;
+  /* background-color: rgb(53, 126, 221);
+  color: #fff; */
 }
 
 .center {
@@ -10,4 +10,34 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 10px;
+}
+
+#container {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+#header {
+  height: auto;
+  margin: 10px;
+  padding: 10px;
+  /* border: 1px solid blue; */
+}
+
+#nprogress .bar {
+  background: #80ffff !important;
+  height: 3px !important;
+}
+
+#nprogress .spinner .spinner-icon {
+  width: 22px;
+  height: 22px;
+  border-top-color: #80ffff !important;
+  border-left-color: #80ffff !important;
+}
+
+#nprogress .spinner {
+  top: 15px;
+  left: 15px !important;
 }
