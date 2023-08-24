@@ -26,15 +26,15 @@ body {
 }
 
 #nprogress .bar {
-  background: #80ffff !important;
+  background: #1677ff !important;
   height: 3px !important;
 }
 
 #nprogress .spinner .spinner-icon {
   width: 22px;
   height: 22px;
-  border-top-color: #80ffff !important;
-  border-left-color: #80ffff !important;
+  border-top-color: #1677ff !important;
+  border-left-color: #1677ff !important;
 }
 
 #nprogress .spinner {

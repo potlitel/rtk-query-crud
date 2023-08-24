@@ -1,0 +1,23 @@
+.style {
+  height: 40;
+  width: 40;
+  lineheight: "40px";
+  borderradius: 4;
+  backgroundcolor: "#1088e9";
+  color: "#fff";
+  textalign: "center";
+  fontsize: 14;
+}
+
+.componentStyles {
+  margin-bottom: 1.3rem;
+  margin-top: 0.5rem;
+  display: block;
+}
+.labelStyles {
+  display: block;
+  padding-bottom: 0.4rem;
+}
+.labelStyles a {
+  color: darkcyan;
+}

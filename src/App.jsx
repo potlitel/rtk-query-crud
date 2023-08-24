@@ -2,16 +2,20 @@
 
 import TaskForm from "./components/TaskForm";
 import { TasksList } from "./components/TasksList";
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
 
 const App = () => {
   return (
     <>
-      <div id="container">
-        <div id="header">
-          <TaskForm />
-          <TasksList />
+      <Provider store={store}>
+        <div id="container">
+          <div id="header">
+            <TaskForm />
+            <TasksList />
+          </div>
         </div>
-      </div>
+      </Provider>
     </>
   );
 };

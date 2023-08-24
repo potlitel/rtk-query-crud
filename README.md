@@ -10,3 +10,5 @@ Currently, two official plugins are available:
 ### Usefull links
 
 [RTK Query: Clean way to set minimum time threshold on initial data fetches or mutations #1276](https://github.com/reduxjs/redux-toolkit/discussions/1276)
+
+[Build a CRUD App with React.js and Redux Toolkit](https://codevoweb.com/build-crud-app-with-reactjs-and-redux-toolkit/#google_vignette)
