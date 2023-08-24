@@ -1,8 +1,32 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import { Button, List, Skeleton, Checkbox, Popconfirm } from "antd";
 import { DeleteOutlined } from "@ant-design/icons";
 import image from "../assets/images.jpeg";
-const ListsAntd = ({ dataDisplay, updateTask, deleteTask, cargando }) => {
+import SkeletonParagraph from "../features/SkeletonParagraph";
+const ListsAntd = ({
+  dataDisplay,
+  updateTask,
+  deleteTask,
+  cargando,
+  isLoading,
+  isError,
+  error,
+}) => {
+  if (isLoading) return <SkeletonParagraph loading={isLoading} />;
+  else if (isError)
+    return (
+      <div>
+        Error: {error.status} - {JSON.stringify(error.data.message)}
+      </div>
+    );
+
+  // const dataDisplay1 = Array.from(dataDisplay).map((_, i) => ({
+  //   id: _.id,
+  //   name: _.name,
+  //   description: _.description,
+  //   completed: _.completed,
+  // }));
   return (
     <>
       <List
