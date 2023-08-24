@@ -14,6 +14,7 @@ export const LoadingButton = ({
   btnColor = "bg-indigo-500",
   children,
   loading = false,
+  text = "",
 }) => {
   return (
     <button
@@ -26,7 +27,7 @@ export const LoadingButton = ({
       {loading ? (
         <div className="flex items-center gap-3">
           <Spinner />
-          <span className="text-white inline-block">Loading...</span>
+          <span className="text-white inline-block">{text}</span>
         </div>
       ) : (
         <span className={`text-lg font-normal ${textColor}`}>{children}</span>

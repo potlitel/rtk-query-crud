@@ -92,7 +92,7 @@ const TaskForm = ({ setOpenNoteModal }) => {
     // </form>
     <section>
       <div className="flex justify-between items-center mb-3 pb-3 border-b border-gray-200">
-        <h2 className="text-2xl text-ct-dark-600 font-semibold">Create Note</h2>
+        <h2 className="text-2xl text-ct-dark-600 font-semibold">Create Task</h2>
         <div
           onClick={() => setOpenNoteModal(false)}
           className="text-2xl text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg p-1.5 ml-auto inline-flex items-center cursor-pointer"
@@ -146,9 +146,10 @@ const TaskForm = ({ setOpenNoteModal }) => {
           <input
             type="checkbox"
             id="completed"
+            className="h-4 w-4 rounded-md shadow"
             {...register("completed").checked}
           />
-          <label htmlFor="completed">Completed task?</label>
+          <label htmlFor="completed"> Completed task?</label>
           <svg
             className="
       absolute 
@@ -165,7 +166,9 @@ const TaskForm = ({ setOpenNoteModal }) => {
             <polyline points="20 6 9 17 4 12"></polyline>
           </svg>
         </div>
-        <LoadingButton loading={isLoading}>Create Task</LoadingButton>
+        <LoadingButton loading={isLoading} text="Creating task...">
+          Create Task
+        </LoadingButton>
       </form>
     </section>
   );
