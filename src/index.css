@@ -1,6 +1,6 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 body {
   /* background-color: rgb(53, 126, 221);
@@ -44,4 +44,8 @@ body {
 #nprogress .spinner {
   top: 15px;
   left: 15px !important;
+}
+
+#components-form-demo-control-ref .ant-btn {
+  margin-right: 8px;
 }

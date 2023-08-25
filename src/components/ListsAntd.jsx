@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import { Button, List, Skeleton, Checkbox, Popconfirm } from "antd";
+import { Button, List, Skeleton, Checkbox, Popconfirm, Typography } from "antd";
+const { Text } = Typography;
 import { DeleteOutlined } from "@ant-design/icons";
 import image from "../assets/images.jpeg";
 import SkeletonParagraph from "../features/SkeletonParagraph";
@@ -39,7 +40,9 @@ const ListsAntd = ({
           pageSize: 3,
         }}
         dataSource={dataDisplay}
-        header={<div>Tasks List</div>}
+        // header={
+
+        // }
         footer={
           <div>
             <b>Ant Design ©2023</b> Created by potlitel
@@ -59,7 +62,7 @@ const ListsAntd = ({
                   });
                 }}
               >
-                Completed
+                {item.completed ? <Text delete>Completed</Text> : "Completed"}
               </Checkbox>,
               <Popconfirm
                 key="popConfirm"
@@ -72,6 +75,7 @@ const ListsAntd = ({
                 <Button
                   key="btnDelete"
                   type="primary"
+                  danger
                   icon={<DeleteOutlined />}
                 />
               </Popconfirm>,

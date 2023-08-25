@@ -4,13 +4,13 @@
       "id": 1,
       "name": "Be as thorough as possible.",
       "description": "It’s easier to delete than add, so add everything no matter how small to capture everything you have to do in one place. If you need to edit, you can trim down the list to only essentials.",
-      "completed": false
+      "completed": true
     },
     {
       "id": 2,
       "name": "Assign each task with a number to identify it.",
       "description": "This helps you when referencing the task, and facilitates communication when the task list is shared with a team. It also makes it easier to search for if you have an extensive task list.",
-      "completed": false
+      "completed": true
     },
     {
       "id": 3,
@@ -31,51 +31,9 @@
       "completed": true
     },
     {
-      "name": "Tasks todo ",
-      "description": "Est magnam numquam rem excepturi doloremque cum sunt praesentium non aliquid explicabo ut voluptatibus internos ab veritatis ipsum id illo impedit.",
-      "id": 9,
-      "completed": true
-    },
-    {
-      "name": "gggg",
-      "description": "fdgfdgfd",
-      "id": 10
-    },
-    {
-      "name": "asdssadsfd",
-      "description": "sdfsdfsdfsdf",
-      "id": 11
-    },
-    {
-      "name": "fdgfgdfg",
-      "description": "gfdgdfgdfg",
-      "id": 12,
-      "completed": false
-    },
-    {
-      "name": "czxczxc",
-      "description": "vxvxcv",
-      "id": 13
-    },
-    {
-      "name": "xcvxcv",
-      "description": "xcvxcvxcv",
-      "id": 14
-    },
-    {
-      "name": "ffsdfsdf",
-      "description": "sdfsdfsdfsdf",
-      "id": 15
-    },
-    {
-      "name": "sdfsdfds",
-      "description": "sdfsdfsdf",
-      "id": 16
-    },
-    {
-      "name": "ssssssssss",
-      "description": "dfsdfsdfsdf",
-      "id": 18,
+      "name": "potlitel",
+      "description": "Lorem ipsum!!!",
+      "id": 6,
       "completed": true
     }
   ]

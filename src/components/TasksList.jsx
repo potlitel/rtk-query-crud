@@ -7,10 +7,13 @@ import {
   useUpdateTasksMutation,
 } from "../api/apiSlice";
 import NProgress from "nprogress";
+import { Button, Col, Row, Modal } from "antd";
+import { PlusOutlined } from "@ant-design/icons";
 import useMinimumFetchWaitTimeElapsed from "../utils/useMinimumFetchTimeElapsed";
 import ListsAntd from "./ListsAntd";
 import styles from "./Styles.module.css";
-import { notification } from "antd";
+import { notification, Typography } from "antd";
+const { Title } = Typography;
 import TaskModal from "./Task.modal";
 import TaskForm from "./TaskForm";
 
@@ -72,7 +75,7 @@ export const TasksList = () => {
 
   return (
     <>
-      <div className="1xl:max-w-[50rem] max-w-[5rem] mx-auto">
+      {/* <div className="1xl:max-w-[50rem] max-w-[5rem] mx-auto">
         <div className="m-8 grid grid-cols-[repeat(auto-fill,_320px)] gap-7 grid-rows-[1fr]">
           <div className="p-4 min-h-[8rem] bg-white rounded-lg border border-gray-200 shadow-md flex flex-col items-center justify-center">
             <div
@@ -89,7 +92,24 @@ export const TasksList = () => {
             </h4>
           </div>
         </div>
-      </div>
+      </div> */}
+      <Row>
+        <Col span={23}>
+          <div>
+            <Title>Tasks List</Title>
+          </div>
+        </Col>
+        <Col span={1}>
+          <Button
+            type="primary"
+            icon={<PlusOutlined />}
+            size="large"
+            onClick={() => setOpenNoteModal(true)}
+          >
+            {/* Download */}
+          </Button>
+        </Col>
+      </Row>
       <ListsAntd
         isLoading={isLoading}
         isError={isError}
@@ -100,12 +120,27 @@ export const TasksList = () => {
         cargando={cargando}
       />
       {/* Create Note Modal */}
-      <TaskModal
+      {/* <TaskModal
         openNoteModal={openNoteModal}
         setOpenNoteModal={setOpenNoteModal}
       >
         <TaskForm setOpenNoteModal={setOpenNoteModal} />
-      </TaskModal>
+      </TaskModal> */}
+      <Modal
+        title="Add new task"
+        centered
+        open={openNoteModal}
+        footer={(null, null)}
+        onCancel={(e) => {
+          e.stopPropagation();
+          setOpenNoteModal(false);
+        }}
+        // onClose={() => setOpenNoteModal(false)}
+        // destroyOnClose={true}
+        // closable={true}
+      >
+        <TaskForm />
+      </Modal>
     </>
   );
 };

@@ -12,3 +12,5 @@ Currently, two official plugins are available:
 [RTK Query: Clean way to set minimum time threshold on initial data fetches or mutations #1276](https://github.com/reduxjs/redux-toolkit/discussions/1276)
 
 [Build a CRUD App with React.js and Redux Toolkit](https://codevoweb.com/build-crud-app-with-reactjs-and-redux-toolkit/#google_vignette)
+
+[How to hide the OK and Cancel buttons of antd Modal?](https://stackoverflow.com/questions/40699879/how-to-hide-the-ok-and-cancel-buttons-of-antd-modal)
