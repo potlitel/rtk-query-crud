@@ -16,7 +16,7 @@
       "id": 3,
       "name": "Divide your task list into different categories.",
       "description": "You’ve already done this in terms of priority, but that’s only one category. You might want to organize it by project phase or by which department or team is responsible for executing that task. This allows you to keep track of your work and check on its status so nothing falls through the cracks.",
-      "completed": true
+      "completed": false
     },
     {
       "id": 4,
