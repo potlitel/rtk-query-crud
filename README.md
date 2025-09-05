@@ -34,12 +34,17 @@ cd rtk-query-crud
 npm install
 ```
 
-3. Iniciar la aplicación:
+3. Iniciar servidor backend:
+
+```bash
+json-server --watch db/tasks.json --delay 1000 --port 3001
+```
+
+4. Iniciar la aplicación:
 
 ```bash
 npm start
 ```
-
 
 4. Abrir en el navegador `http://localhost:3000` para interactuar con la app.
 
